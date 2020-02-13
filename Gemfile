@@ -5,8 +5,6 @@ ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
-
-gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -40,3 +38,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# use Postgresql db for Heroku
+gem 'pg'
+
+# dotenv to hide api keys
+gem 'dotenv-rails', groups: [:development, :test]
+
+# rest-client to communicate with API
+gem 'rest-client'
